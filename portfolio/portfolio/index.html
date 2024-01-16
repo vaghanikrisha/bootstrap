@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/logo-0.2.png" type="image/x-icon">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- fonts css -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body style="background-image: url('assets/img/fifth_bg.jpg');
+             background-repeat: no-repeat;
+            background-size: cover;
+            ">
+
+    <!-- nav start -->
+    <nav>
+        <ul class="d-none d-xl-flex">
+            <li>
+                <a href="index.html" class="active"> <i class="fa-solid fa-house-crack"></i> Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="active"> <i class="fa-solid fa-user-graduate"></i> About</a>
+            </li>
+            <li>
+                <a href=" Education & Skills.html" class="active"> <i class="fa-solid fa-pen"></i>  Education & Skills</a>
+            </li>
+            <li>
+                <a href="work.html" class="active"> <i class="fa-regular fa-images"></i> Work</a>
+            </li>
+            <li>
+                <a href="contact.html" class="active"> <i class="fa-solid fa-envelope"></i> Contact</a>
+            </li>
+        </ul>
+        <div class="toggle d-flex d-xl-none justify-content-center mt-5 text-white">
+            <i class="fa-solid fa-bars-staggered" data-bs-toggle="offcanvas" data-bs-target="#menu"></i>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" style="background-color: transparent;" tabindex="-1" id="menu"
+        aria-labelledby="offcanvasExampleLabel">
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html" class="active"> <i class="fa-solid fa-house-crack"></i> Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="active"> <i class="fa-solid fa-user-graduate"></i> About</a>
+                </li>
+                <li>
+                    <a href=" Education & Skills.html" class="active"> <i class="fa-solid fa-pen"></i>  Education & Skills</a>
+                </li>
+                <li>
+                    <a href="work.html" class="active"> <i class="fa-regular fa-images"></i> Work</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active"> <i class="fa-solid fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- section start -->
+    <section class="slide " >
+        <div class="content first-content pb-5">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="author-card d-flex justify-content-center">
+                        <div class="author-image"  >
+                            <img src="assets/img/img-1.jpg" style="width: 50vh;" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="author-card2" >
+                        <div class="d-flex align-self-auto"><h2 class="p-0 pb-3 ">KRISHA VAGHANI</h2></div>
+                        
+                        <div class="align-self-center"><h4 class="pb-3"><span id="changingText"></span></h4></div>
+                        <div class=" align-self-end"><p class="pb-3">We appreciate your trust greatly our clients choose us & our products because  they know we
+                            are the best.
+                        </p></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- js start -->
+
+    <!-- Bootstrap link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- headline js start  -->
+    <script>
+        //you can change the text, but you need to keep same format [yourtext, color];
+let yourtext = [
+  ["Fullstack Developer", ""],
+  ["Fronted Developer", ""]
+  ["Backend Developer", ""],
+];
+
+let x = 0;
+let y = 0;
+//how fast typing is
+let wait = 300;
+//how long you want to text stay before overwriting
+let additionalwait = 5;
+let txt = yourtext[0][0].split("");
+let out = "";
+let retyping = setInterval(function () {
+  document.getElementById("changingText").innerHTML = out;
+  if (x > txt.length - 1) {
+  } else {
+    out += txt[x];
+  }
+  x++;
+  if (x == txt.length + 2 + additionalwait) {
+    if (y == yourtext.length - 1) {
+      y = 0;
+      txt = yourtext[y][0].split("");
+      out = "";
+      document.getElementById("changingText").innerHTML = out;
+      document.getElementById("changingText").style.color = yourtext[y][1];
+      x = 0;
+    } else {
+      y += 1;
+      txt = yourtext[y][0].split("");
+      out = "";
+      document.getElementById("changingText").innerHTML = out;
+      document.getElementById("changingText").style.color = yourtext[y][1];
+      x = 0;
+    }
+  }
+}, wait);
+
+    </script>
+    <!-- headline js end  -->
+
+</body>
+
+</html>

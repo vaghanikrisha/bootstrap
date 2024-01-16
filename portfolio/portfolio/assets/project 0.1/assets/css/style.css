@@ -1,0 +1,136 @@
+.bg-primary {
+  background-color: #ba9e76 !important;
+}
+.bg-secondary {
+  background-color: #fffbef !important;
+}
+.bg-1{
+  background-color: #ECE5D3 !important;
+}
+.bg-brown {
+  background-color: #342f2c;
+}
+.text-primary-1 {
+  color: #ba9e76;
+}
+.text-primary {
+  color: #342f2c;
+}
+.text-secondary {
+  color: #675c55;
+}
+.text-a-7 {
+  color: #938c89;
+}
+.text-Poppins {
+  font-family: Poppins !important;
+}
+.text-OPTICopperplate {
+  font-family: OPTICopperplate !important;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.slider-1 {
+  background-image: url("../img/kam-idris-hYb7kbu4x7E-unsplash\ 1.jpg");
+  padding: 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #342f2c;
+  z-index: 1;
+  position: relative;
+}
+.pattern {
+  position: absolute;
+  z-index: -1;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #342f2c;
+}
+.pattern img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.line {
+  width: 116px;
+  height: 2px;
+  background-color: #ba9e76;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.img-11{
+  position: relative;
+}
+.img-11::after{
+  position: absolute;
+  content: "";
+  height: 80px;
+  width: 80px;
+  top: -30%;
+  left: 32%;
+  z-index: -1;
+  background-color: #ba9e76;
+}
+.img-12{
+  position: relative;
+}
+.img-12::after{
+  position: absolute;
+  content: "";
+  height: 80px;
+  width: 80px;
+  top: -10%;
+  left: -6%;
+  z-index: -1;
+  background-color: #ba9e76;
+}
+.img-13{
+  position: relative;
+}
+.img-13::after{
+  position: absolute;
+  content: "";
+  height: 130px;
+  width: 130px;
+  top: 16%;
+  left: -4%;
+  z-index: -1;
+  background-color: #ba9e76;
+}
+.img-14{
+  position: relative;
+}
+.img-14::after{
+  position: absolute;
+  content: "";
+  height: 80px;
+  width: 80px;
+  top: 0%;
+  left: -4%;
+  z-index: -1;
+  background-color: #ba9e76;
+}
+.content-d{
+  position: relative;
+  z-index: 99;
+}
+.content-d::after{
+  position: absolute;
+  content: "";
+  width: 1300px;
+  height: 400px;
+  background-color: #FFFBEF;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}

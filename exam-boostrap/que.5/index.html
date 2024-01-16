@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accodian component</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            Question 1:What is Microsoft?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p class="fw-light">Answer: Microsoft is a leading global vendor of computer software;
+                                hardware for computer, mobile and gaming systems; and cloud services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            Question 2:What is Microsoft used for?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p class="fw-light">Answer:
+                                Microsoft is the largest vendor of computer software in the world. It is also a leading
+                                provider of cloud computing services, video games, computer and gaming hardware, search
+                                and other online services. Microsoft's corporate headquarters is located in Redmond,
+                                Wash., and it has offices in more than 60 countries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            Question 3:What is Microsoft and its work?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p class="fw-light">Answer: Microsoft Corporation, leading developer of personal-computer
+                                software systems and applications. The company also publishes books and multimedia
+                                titles, produces its own line of hybrid tablet computers, offers e-mail services, and
+                                sells electronic game systems and computer peripherals (input/output devices).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/jq/jquery-3.5.1.slim.min.js"></script>
+        <script src="assets/css/bootstrap.bundle.min.js"></script>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offcanvas component</title>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header start  -->
+      <h2 class="text-center mb-4">Header Responsive</h2>
+    <nav class="navbar sticky-top navbar-expand-lg bg-secondary text-white">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#header"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pages</a>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Services</a>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+              <li>
+                <button class=" btn justify-content-between d-flex justify-content-center" style="padding: 10px 30px; align-items: center; border-radius: 20px; border: 1px solid #000; background-color: #fff; color: #000; margin-bottom: 10px;">
+                  LOG IN  
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- header end  -->
+    <!-- offcanvas start  -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="header"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pages</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ <!-- offcanvas end  -->
+
+
+ <script src="css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
